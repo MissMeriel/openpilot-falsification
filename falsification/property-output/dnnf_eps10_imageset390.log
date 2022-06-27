@@ -1,0 +1,180 @@
+imageset 390 epsilon 10 property 1 attempt 1
+dnnf
+  result: unknown
+  falsification time: 97.6080
+  total time: 175.1592
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 2
+dnnf
+  result: unknown
+  falsification time: 101.6784
+  total time: 181.8939
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 3
+dnnf
+  result: unknown
+  falsification time: 96.2087
+  total time: 171.9924
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 4
+dnnf
+  result: unknown
+  falsification time: 96.8324
+  total time: 173.3605
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 5
+dnnf
+  result: unknown
+  falsification time: 117.7269
+  total time: 195.1004
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 6
+dnnf
+  result: unknown
+  falsification time: 115.3143
+  total time: 204.7808
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 7
+dnnf
+  result: unknown
+  falsification time: 119.1079
+  total time: 199.9355
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 8
+dnnf
+  result: unknown
+  falsification time: 118.7101
+  total time: 198.3847
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 9
+dnnf
+  result: unknown
+  falsification time: 116.8771
+  total time: 198.2698
+  restarts: 100
+imageset 390 epsilon 10 property 1 attempt 10
+dnnf
+  result: unknown
+  falsification time: 122.1327
+  total time: 202.9746
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 1
+dnnf
+  result: unknown
+  falsification time: 79.7022
+  total time: 158.1993
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 2
+dnnf
+  result: unknown
+  falsification time: 78.7561
+  total time: 156.9997
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 3
+dnnf
+  result: unknown
+  falsification time: 80.8682
+  total time: 163.3071
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 4
+dnnf
+  result: unknown
+  falsification time: 80.4322
+  total time: 159.8554
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 5
+dnnf
+  result: unknown
+  falsification time: 82.0881
+  total time: 161.2303
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 6
+dnnf
+  result: unknown
+  falsification time: 79.5105
+  total time: 157.6956
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 7
+dnnf
+  result: unknown
+  falsification time: 79.7820
+  total time: 157.3160
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 8
+dnnf
+  result: unknown
+  falsification time: 78.8457
+  total time: 158.3749
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 9
+dnnf
+  result: unknown
+  falsification time: 80.4911
+  total time: 160.4021
+  restarts: 100
+imageset 390 epsilon 10 property 2 attempt 10
+dnnf
+  result: unknown
+  falsification time: 80.1992
+  total time: 159.4019
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 1
+dnnf
+  result: unknown
+  falsification time: 180.0229
+  total time: 301.8105
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 2
+dnnf
+  result: unknown
+  falsification time: 174.7571
+  total time: 294.3509
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 3
+dnnf
+  result: unknown
+  falsification time: 167.9223
+  total time: 285.9707
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 4
+dnnf
+  result: unknown
+  falsification time: 144.7281
+  total time: 259.0593
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 5
+dnnf
+  result: unknown
+  falsification time: 145.4375
+  total time: 261.3557
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 6
+dnnf
+  result: unknown
+  falsification time: 147.4325
+  total time: 262.2427
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 7
+dnnf
+  result: unknown
+  falsification time: 146.7117
+  total time: 262.9881
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 8
+dnnf
+  result: unknown
+  falsification time: 144.6113
+  total time: 255.9160
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 9
+dnnf
+  result: unknown
+  falsification time: 148.6704
+  total time: 262.8658
+  restarts: 100
+imageset 390 epsilon 10 property 3 attempt 10
+dnnf
+  result: unknown
+  falsification time: 144.1184
+  total time: 257.1774
+  restarts: 100

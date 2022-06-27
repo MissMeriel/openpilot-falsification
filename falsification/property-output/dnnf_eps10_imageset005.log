@@ -1,0 +1,180 @@
+imageset 005 epsilon 10 property 1 attempt 1
+dnnf
+  result: unknown
+  falsification time: 199.3791
+  total time: 279.9401
+  restarts: 100
+imageset 005 epsilon 10 property 1 attempt 2
+dnnf
+  result: unknown
+  falsification time: 206.2188
+  total time: 284.4391
+  restarts: 100
+imageset 005 epsilon 10 property 1 attempt 3
+dnnf
+  result: unknown
+  falsification time: 205.1652
+  total time: 281.8551
+  restarts: 100
+imageset 005 epsilon 10 property 1 attempt 4
+dnnf
+  result: unsafe
+  falsification time: 19.6813
+  total time: 97.9220
+  restarts: 8
+imageset 005 epsilon 10 property 1 attempt 5
+dnnf
+  result: unknown
+  falsification time: 203.1767
+  total time: 283.3767
+  restarts: 100
+imageset 005 epsilon 10 property 1 attempt 6
+dnnf
+  result: unknown
+  falsification time: 199.2606
+  total time: 275.2928
+  restarts: 100
+imageset 005 epsilon 10 property 1 attempt 7
+dnnf
+  result: unsafe
+  falsification time: 176.8286
+  total time: 254.8289
+  restarts: 87
+imageset 005 epsilon 10 property 1 attempt 8
+dnnf
+  result: unsafe
+  falsification time: 49.2542
+  total time: 125.6853
+  restarts: 24
+imageset 005 epsilon 10 property 1 attempt 9
+dnnf
+  result: unknown
+  falsification time: 250.3062
+  total time: 327.0012
+  restarts: 100
+imageset 005 epsilon 10 property 1 attempt 10
+dnnf
+  result: unsafe
+  falsification time: 71.1106
+  total time: 153.0899
+  restarts: 26
+imageset 005 epsilon 10 property 2 attempt 1
+dnnf
+  result: unknown
+  falsification time: 88.9137
+  total time: 169.3546
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 2
+dnnf
+  result: unknown
+  falsification time: 85.7045
+  total time: 166.8789
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 3
+dnnf
+  result: unknown
+  falsification time: 84.4535
+  total time: 161.6350
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 4
+dnnf
+  result: unknown
+  falsification time: 86.5370
+  total time: 166.5174
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 5
+dnnf
+  result: unknown
+  falsification time: 86.5264
+  total time: 166.7659
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 6
+dnnf
+  result: unknown
+  falsification time: 87.3338
+  total time: 169.1025
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 7
+dnnf
+  result: unknown
+  falsification time: 87.6702
+  total time: 168.2554
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 8
+dnnf
+  result: unknown
+  falsification time: 85.2209
+  total time: 168.0975
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 9
+dnnf
+  result: unknown
+  falsification time: 87.3052
+  total time: 168.7485
+  restarts: 100
+imageset 005 epsilon 10 property 2 attempt 10
+dnnf
+  result: unknown
+  falsification time: 87.9357
+  total time: 169.4669
+  restarts: 100
+imageset 005 epsilon 10 property 3 attempt 1
+dnnf
+  result: unsafe
+  falsification time: 1.2565
+  total time: 119.6894
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 2
+dnnf
+  result: unsafe
+  falsification time: 2.3095
+  total time: 124.4645
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 3
+dnnf
+  result: unsafe
+  falsification time: 2.0708
+  total time: 123.5666
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 4
+dnnf
+  result: unsafe
+  falsification time: 1.4802
+  total time: 121.1148
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 5
+dnnf
+  result: unsafe
+  falsification time: 2.1213
+  total time: 126.6505
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 6
+dnnf
+  result: unsafe
+  falsification time: 1.7321
+  total time: 122.4274
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 7
+dnnf
+  result: unsafe
+  falsification time: 1.3253
+  total time: 118.2670
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 8
+dnnf
+  result: unsafe
+  falsification time: 2.3771
+  total time: 127.6174
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 9
+dnnf
+  result: unsafe
+  falsification time: 1.7009
+  total time: 121.0024
+  restarts: 0
+imageset 005 epsilon 10 property 3 attempt 10
+dnnf
+  result: unsafe
+  falsification time: 3.0645
+  total time: 121.4121
+  restarts: 0
