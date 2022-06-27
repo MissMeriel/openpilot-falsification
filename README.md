@@ -1,23 +1,23 @@
-# openpilot-falsification
-Finding Property Violations through Network Falsification:  Challenges, Adaptations and Lessons Learned from OpenPilot
+# Finding Property Violations through Network Falsification:  Challenges, Adaptations and Lessons Learned from OpenPilot
 
-# Getting Started
+## Getting Started
 
-## What's in this repo?
-1. Extended results from the paper
+### What's in this repo?
+1. [Extended results](Extended-results.md) from the paper
 	1. 	Original output for all 10 images
 	2. Baseline for all 10 images
 	3. Counterexamples for all 10 images on all 3 safety properties
-2. How to reproduce those results from the paper
-	1. How to generate original images dataset
-	2. How to generate baseline images
-	3. How to generate counterexamples
-3. Links to other large-scale networks of interest (good candidate networks for further study):
+2. [How to reproduce](How-to-reproduce.md) results from the paper
+    1. How to generate original images dataset
+    2. How to generate baseline images
+    3. How to generate counterexamples
+    4. Description of image distance metrics
+3. Links to other [large-scale networks of interest](Future-work.md) (candidate networks for further study):
 	1. BigGAN
 	2. AdmiralNet
 	3. Detectron2
-4. Further description of OpenPilot, including network input and output
-5. Description of image distance metrics
+4. [Further documentation](documentation) of OpenPilot, including network input and output
+
 
 
 
@@ -32,9 +32,9 @@ openpilot_docker (tag): sha256:35ff99c6004869d97d05a90fa77668f732596d74886f9a5c5
 Carla (Version): 0.9.12 (edited)
 ```
 
-To read more on performing a full install of OpenPilot, refer to [documentation](documentation) or [Installing OpenPilot](https://github.com/commaai/openpilot/tree/master/tools)
+To read more on performing a full installation of OpenPilot, refer to [documentation](documentation) or [Installing OpenPilot](https://github.com/commaai/openpilot/tree/master/tools)
 
-## Installing DNNF
+## Installing the extended DNNF
 
 ```bash
 git clone git@github.com:MissMeriel/dnnv.git

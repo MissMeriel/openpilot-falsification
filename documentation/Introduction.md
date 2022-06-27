@@ -12,7 +12,7 @@ The basic setup for inferencing is:
 
 Below is a high level look at the ORT framework:
 
-![ort architecture](ORT-arch.png)
+![ort architecture](figures/ORT-arch.png)
 
 However, `onnxruntime` uses gradients from the ML framework of the original model and then does the computation itself. 
 This means that it's dependent on having the model architecture in another framework, e.g. pytorch, which is 90% of the work of converting ONNX to pytorch.

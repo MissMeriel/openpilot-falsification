@@ -1,17 +1,15 @@
 ## Installing OpenPilot
 
 [Install dependencies for Carla for Ubuntu](https://github.com/commaai/openpilot/wiki/CARLA)
-```bash
-git checkout 
-```
 
-Run these commands on a fresh install of Ubuntu 20.04 and it works for me:
+Run these commands on a clean install of Ubuntu 20.04 and it works for me.
 Install a few prerequisites:
+```python
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install git -y
 sudo apt-get install pipenv -y
-Install openpilot/tools/README.md
+# Install openpilot
 cd ~
 git clone https://github.com/commaai/openpilot.git
 cd openpilot 
@@ -19,7 +17,7 @@ git submodule update --init
 tools/ubuntu_setup.sh
 cd ~/openpilot && pipenv shell
 scons -u -j$(nproc)
-Install Docker
+# Install Docker
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -30,17 +28,23 @@ sudo systemctl status docker
 sudo usermod -aG docker ${USER}
 su - ${USER}
 groups
+```
+
 Terminal 1:
+```bash 
 cd ~/openpilot && pipenv shell
 cd ~/openpilot/tools/sim
 sudo INSTALL=1 ./start_carla.sh
+```
+
 Terminal 2:
+```bash
 cd ~/openpilot && pipenv shell
 cd ~/openpilot/tools/sim
 ./start_openpilot_docker.sh
+```
 
-
-[Installing OpenPilot](https://github.com/commaai/openpilot/tree/master/tools)
+OpenPilot-distributed instructions for installation can be found here: [Installing OpenPilot](https://github.com/commaai/openpilot/tree/master/tools)
 
  
 ```buildoutcfg
