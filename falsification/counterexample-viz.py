@@ -13,10 +13,11 @@ import onnxruntime as ort
 from dataset import Dataset
 from dnnv.nn import parse
 from dnnf.pytorch import convert
-
+import re
 from lane_image_space import transform_points
 from supercombo_parser import parser
 
+os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin'
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -290,20 +291,20 @@ def write_dataset_to_npy(args):
 
 def generate_baseline():
     count = 0
-    origimg = np.load("H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/imageset0104.npy")
-    for i in range(100):
-        noise = np.random.normal(loc=0.0, scale=1.5, size=origimg.shape)
-        arr = np.array(origimg + noise, dtype="float32")
-        arr = np.around(arr, decimals=0)
-        arr = np.clip(arr, 0, 255)
-        norm_l2 = np.sqrt(np.square(np.sum(np.array(origimg) - arr)))
-        norm_linf = np.max(np.array(origimg) - arr)
-        print(f"{norm_linf=}")
-        rnorm = round(norm_linf, 1)
-        if rnorm <= 10.0 and rnorm >= 5.0:
-            with open(f"H:/GitHub/testing-openpilot/model-manipulation/baseline/imageset0104-{count}-{rnorm}.npy", "wb") as f:
-                np.save(f, arr)
-        count += 1
+    images = ["005", "102", "104", "199", "314", "390", "475", "448", "597", "680"]
+    for img in images:
+        origimg = np.load(f"H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/imageset0{img}.npy")
+        for i in range(100):
+            noise = np.random.normal(loc=0.0, scale=1.75, size=origimg.shape)
+            arr = np.array(origimg + noise, dtype="float32")
+            arr = np.around(arr, decimals=0)
+            arr = np.clip(arr, 0, 255)
+            norm_linf = np.max(np.array(origimg) - arr)
+            rnorm = round(norm_linf, 1)
+            if rnorm == 10.0:
+                with open(f"H:/GitHub/testing-openpilot/model-manipulation/baseline/imageset0{img}-{count}-{rnorm}.npy", "wb") as f:
+                    np.save(f, arr)
+            count += 1
 
 
 def view_counterexamples(args):
@@ -363,13 +364,8 @@ def view_counterexample_output(args, src="counterexamples", dest="figures", orig
     orig_output = ds.parseOutput(orig_result)
 
     def get_orig_img(file):
-        f = file.replace(".npy", "")
-        try:
-            f = f.split("_")
-            f[1] = f[1].replace("imageset", "imageset")
-        except:
-            return f"H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/{f}.npy"
-        return f"H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/{f[1]}.npy"
+        m = re.search("imageset[0-9]+", file)
+        return f"H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/{m.group(0)}.npy"
 
     def get_prop(file):
         f = file.replace(".npy", "")
@@ -380,19 +376,16 @@ def view_counterexample_output(args, src="counterexamples", dest="figures", orig
         return 2
 
     for file in ce_files:
-
         print(f"{file}")
-        # orig_filepath = get_orig_img(file)
-        # try:
-        #     orig_img = np.load(orig_filepath)
-        # except FileNotFoundError as e:
-        #     orig_img = np.load(orig_filepath.replace("imageset", "imageset0"))
-        # orig_result = pytorch_model(torch.from_numpy(orig_img).to(device),  # input.to(device), #
-        #                             torch.from_numpy(desire).to(device),
-        #                             torch.from_numpy(traffic_convention).to(device),
-        #                             torch.from_numpy(initial_state).to(device))
-        # orig_result = orig_result.numpy()[0]
-        # orig_output = ds.parseOutput(orig_result)
+        orig_filepath = get_orig_img(file)
+        orig_img = np.load(orig_filepath)
+
+        orig_result = pytorch_model(torch.from_numpy(orig_img).to(device),
+                                    torch.from_numpy(desire).to(device),
+                                    torch.from_numpy(traffic_convention).to(device),
+                                    torch.from_numpy(initial_state).to(device))
+        orig_result = orig_result.numpy()[0]
+        orig_output = ds.parseOutput(orig_result)
 
         x = np.load("/".join([dir, file]))
 
@@ -410,11 +403,11 @@ def view_counterexample_output(args, src="counterexamples", dest="figures", orig
         cv2.imwrite(f'{dir.replace(src, dest)}/{file.replace(".npy", "-1.jpg")}', x_deparsed1)
 
         ce_output = ds.parseOutput(result_converted_model)
-        # if "baseline" not in src or "orig" not in dest:
-        #     plot_output_with_orig(ce_output, orig_output, filename=f'{dir.replace(src, dest)}/{file.replace(".npy", "plot.jpg")}', prop=get_prop(file))
-        # else:
-        #     # plot_output(ce_output, filename=f'{dir.replace(src, dest)}/{file.replace(".npy", "plot.jpg")}')
-        plot_output_stylized(ce_output, filename=f'{dir.replace(src, dest)}/{file.replace(".npy", "plot.jpg")}')
+        if "baseline" in src or "orig" in dest:
+            plot_output_stylized(ce_output, filename=f'{dir.replace(src, dest)}/{file.replace(".npy", "plot.jpg")}')
+        else:
+            # plot_output(ce_output, filename=f'{dir.replace(src, dest)}/{file.replace(".npy", "plot.jpg")}')
+            plot_output_with_orig(ce_output, orig_output, filename=f'{dir.replace(src, dest)}/{file.replace(".npy", "plot.jpg")}', prop=get_prop(file))
 
         print("Property 1:")
         for i, label in zip(range(5484, 5491, 2), ["far left", "near left", "near right", "far right"]):
@@ -521,6 +514,6 @@ if __name__ == '__main__':
     args = parse_args()
     # write_dataset_to_npy(args)
     # generate_baseline()
-    # view_counterexample_output(args, src="baseline", dest="figures/baseline", orig="H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/imageset0104.npy")
+    view_counterexample_output(args, src="counterexamples", dest="figures", orig="H:/GitHub/testing-openpilot/model-manipulation/dataset_imgs/imageset0104.npy")
     # parse_logfile("H:/GitHub/testing-openpilot/model-manipulation/dnnf_test_eps1_imageset104_pm10percent.log")
-    parse_logfiles()
+    # parse_logfiles()
