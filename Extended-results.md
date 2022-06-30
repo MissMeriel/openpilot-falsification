@@ -239,8 +239,38 @@ Output          |
 
 original imageset, original output, counterexample pair, counterexample output 
 
+|                | Imageset 005                             | Imageset 102 | Imageset 104 | Imageset 199 | Imageset 314 |
+|----------------|------------------------------------------|--------------|--------------|--------------|--------------|
+| Counterexample | ![](results-images/counterexamples/counterexample_imageset0005_prop1_10_test_eps10-perc10-0.jpg) | ![](results-images/counterexamples/counterexample_imageset0102_prop1_10_test_eps10-perc10-0.jpg) | ![](results-images/counterexamples/counterexample_imageset0104_prop1_1_test_eps10-perc10-0.jpg) | N/A          | N/A          |
+| Output         | ![](results-images/counterexamples/counterexample_imageset0005_prop1_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0102_prop1_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0104_prop1_1_test_eps10-perc10plot.jpg) | N/A          | N/A          |
+
+|                | Imageset 390 | Imageset 448 | Imageset 475                                                                                      | Imageset 597                                                                                      | Imageset 680 |
+|----------------|--------------|--------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|--------------|
+| Counterexample | N/A | N/A | ![](results-images/counterexamples/counterexample_imageset0475_prop1_9_test_eps10-perc10-0.jpg)   | ![](results-images/counterexamples/counterexample_imageset0597_prop1_2_test_eps10-perc10-0.jpg)   | N/A |
+| Output         | N/A | N/A | ![](results-images/counterexamples/counterexample_imageset0475_prop1_9_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0597_prop1_2_test_eps10-perc10plot.jpg) | N/A |
+
 ## Counterexamples for Property 2
 
 
+|                | Imageset 005 | Imageset 102 | Imageset 104                                                                                       | Imageset 199                                                                                       | Imageset 314 |
+|----------------|--------------|--------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------|
+| Counterexample | N/A          | ![](results-images/counterexamples/counterexample_imageset0102_prop2_10_test_eps10-perc10-0.jpg) | ![](results-images/counterexamples/counterexample_imageset0104_prop2_10_test_eps10-perc10-0.jpg)   | ![](results-images/counterexamples/counterexample_imageset0199_prop2_10_test_eps10-perc10-0.jpg)   | N/A |
+| Output         | N/A          | ![](results-images/counterexamples/counterexample_imageset0102_prop2_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0104_prop2_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0199_prop2_10_test_eps10-perc10plot.jpg) | N/A |
+
+|                | Imageset 390                             | Imageset 448                                                                                       | Imageset 475                                                                                      | Imageset 597 | Imageset 680                                                                                      |
+|----------------|------------------------------------------|----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------|
+| Counterexample | N/A                                      | ![](results-images/counterexamples/counterexample_imageset0448_prop2_10_test_eps10-perc10-0.jpg)   | ![](results-images/counterexamples/counterexample_imageset0475_prop2_2_test_eps10-perc10-0.jpg)   | N/A | ![](results-images/counterexamples/counterexample_imageset0680_prop2_1_test_eps10-perc10-0.jpg)   |
+| Output         | N/A | ![](results-images/counterexamples/counterexample_imageset0448_prop2_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0475_prop2_2_test_eps10-perc10plot.jpg) | N/A | ![](results-images/counterexamples/counterexample_imageset0680_prop2_1_test_eps10-perc10plot.jpg) |
+
 ## Counterexamples for Property 3
 
+
+|                | Imageset 005                             | Imageset 102                                                                                        | Imageset 104                                                                                       | Imageset 199                                                                                       | Imageset 314                                                                                       |
+|----------------|------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Counterexample | ![](results-images/counterexamples/counterexample_imageset0005_prop3_2_test_eps10-perc10-0.jpg) | ![](results-images/counterexamples/counterexample_imageset0102_prop3_10_test_eps10-perc10-0.jpg)    | ![](results-images/counterexamples/counterexample_imageset0104_prop3_10_test_eps10-perc10-0.jpg)   | ![](results-images/counterexamples/counterexample_imageset0199_prop3_10_test_eps10-perc10-0.jpg)   | ![](results-images/counterexamples/counterexample_imageset0314_prop3_10_test_eps10-perc10-0.jpg)   |
+| Output         | ![](results-images/counterexamples/counterexample_imageset0005_prop3_2_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0102_prop3_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0104_prop3_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0199_prop3_10_test_eps10-perc10plot.jpg) | ![](results-images/counterexamples/counterexample_imageset0314_prop3_10_test_eps10-perc10plot.jpg) |
+
+|                | Imageset 390 | Imageset 448 | Imageset 475 | Imageset 597                                                                                       | Imageset 680 |
+|----------------|--------------|--------------|--------------|----------------------------------------------------------------------------------------------------|--------------|
+| Counterexample | N/A | N/A | N/A | ![](results-images/counterexamples/counterexample_imageset0597_prop3_10_test_eps10-perc10-0.jpg)   | N/A |
+| Output         | N/A | N/A | N/A | ![](results-images/counterexamples/counterexample_imageset0597_prop3_10_test_eps10-perc10plot.jpg) | N/A |
