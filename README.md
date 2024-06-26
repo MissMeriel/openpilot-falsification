@@ -2,6 +2,8 @@
 
 ## Getting Started
 
+ACM publication (DOI 10.1145/3551349.3559500): [https://dl.acm.org/doi/10.1145/3551349.3559500](https://dl.acm.org/doi/10.1145/3551349.3559500)
+
 ### What's in this repo?
 1. [Extended results](Extended-results.md) from the paper
 	1. 	Original output for all 10 images
